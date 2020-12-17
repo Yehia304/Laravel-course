@@ -13,20 +13,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/about',function (){
+// Route::get('/about',function (){
 
-    return "Hi about";
+//     return "Hi about";
 
-});
+// });
 
-Route::get('/{id}/{name}',function ($id,$name){
+// /*Route::get('/{id}/{name}',function ($id,$name){
 
-    return "Hi " . $name ."Your Id IS " . $id;
+//     return "Hi " . $name ."Your Id IS " . $id;
 
 
 
-});
+// });*/
+
+//  Route::get('/admin/posts',array('as'=>'admin.home' , function () {
+//      $url = route('admin.home');
+//     return "Hellooo  " . $url;
+//  }));
+
+//Route::get('/post/{id}','App\Http\Controllers\PostsController@index');
+
+//Route::resource('posts','App\Http\Controllers\PostsController');
+Route::get('/contact','App\Http\Controllers\PostsController@contact');
+Route::get('/display/{id}/{name}/{password}','App\Http\Controllers\PostsController@display');
