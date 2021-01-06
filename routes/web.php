@@ -135,3 +135,20 @@ Route::get('Updateelo',function (){
 
     Post::where('id',2)->update(['title'=>'YehiaM','content'=>'Content']);
 });
+
+Route::get('/delete',function (){
+
+    $post = Post::find(2);
+
+    $post->delete();
+
+});
+
+Route::get('/delete2',function (){
+
+    Post::destroy([3]);
+
+
+
+});
+
