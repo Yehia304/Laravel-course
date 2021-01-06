@@ -152,3 +152,19 @@ Route::get('/delete2',function (){
 
 });
 
+Route::get('/softdelete',function () {
+
+  Post::find(5)->delete();
+
+
+
+
+});
+
+Route::get('/readsoftdelete',function (){
+
+    $post =Post::withTrashed()->where('id',5)->get();
+
+    return $post;
+
+});
