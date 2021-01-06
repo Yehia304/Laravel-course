@@ -40,6 +40,11 @@ use App\Models\Post;
 //Route::get('/post/{id}','App\Http\Controllers\PostsController@index');
 
 //Route::resource('posts','App\Http\Controllers\PostsController');
+
+
+
+
+//BASIC DATABASE
 Route::get('/contact','App\Http\Controllers\PostsController@contact');
 Route::get('/display/{id}/{name}/{password}','App\Http\Controllers\PostsController@display');
 Route::get('/insert/{title}',function ($title){
@@ -79,6 +84,12 @@ Route::get('/delete',function (){
 
 });
 
+
+
+
+
+
+// ELOQUENT
 Route::get('/find',function (){
 
     $posts = Post::all();
@@ -90,4 +101,37 @@ Route::get('/find',function (){
 
    // return $posts;
 
+});
+
+Route::get('/findwhere',function (){
+
+    $post= Post::where('id',2)->get();
+    return $post;
+
+
+});
+
+Route::get('/findmore',function (){
+
+    $posts = new Post;
+
+    $posts->title = 'New title Eloquent';
+
+    $posts->save();
+
+
+});
+
+Route::get('/fillable',function (){
+
+    Post::create(['title'=>'Yehia','content'=>'I love merna so much']);
+
+
+
+});
+
+Route::get('Updateelo',function (){
+
+
+    Post::where('id',2)->update(['title'=>'YehiaM','content'=>'Content']);
 });
