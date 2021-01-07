@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Post;
-
+use App\Models\User;
+use App\Models\Role;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -47,8 +48,8 @@ use App\Models\Post;
 //BASIC DATABASE
 Route::get('/contact','App\Http\Controllers\PostsController@contact');
 Route::get('/display/{id}/{name}/{password}','App\Http\Controllers\PostsController@display');
-Route::get('/insert/{title}',function ($title){
-    DB::insert('insert into posts(title)values(?)',[$title]);
+Route::get('/insert/{title}/{content}/{user_id}',function ($title,$content,$user_id){
+    DB::insert('insert into posts(title,content,user_id)values(?,?,?)',[$title,$content,$user_id]);
 });
 
 Route::get('/read/{id}',function($id){
@@ -166,5 +167,45 @@ Route::get('/readsoftdelete',function (){
     $post =Post::withTrashed()->where('id',5)->get();
 
     return $post;
+
+});
+
+//|--------------------------------------------------------------------------
+//| Eloquent relationships
+//|--------------------------------------------------------------------------
+
+Route::get('/user/{id}/post',function ($id){
+
+    return User::find($id)->post;
+
+});
+
+Route::get('/post/{id}/user',function ($id){
+
+    return Post::find($id)->user->name;
+
+});
+
+Route::get('/user/{id}/posts',function ($id){
+
+    $user = User::find($id);
+
+    foreach ($user->posts as $post){
+
+    echo $post->content . "<br>";
+    }
+
+
+});
+
+Route::get('/user/{id}/role',function ($id){
+
+    $user = User::find($id);
+
+    foreach ($user->roles as $role){
+
+        echo $role->name;
+    }
+
 
 });
