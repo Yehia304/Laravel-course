@@ -209,3 +209,29 @@ Route::get('/user/{id}/role',function ($id){
 
 
 });
+
+Route::get('/role/users',function (){
+
+    $role = Role::find(1);
+
+    foreach ($role->users as $user){
+
+        echo $user->name . "<br>";
+
+    }
+
+
+
+});
+
+Route::get('/pivot',function (){
+
+$user = User::find(1);
+
+foreach ($user->roles as $role){
+
+    return $role->pivot->created_at;
+
+}
+
+});

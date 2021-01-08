@@ -21,9 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e8563df9-994f-40d3-bccb-4f470f105dad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Role.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_06_142903_add_deleted_at_column_to_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_06_142903_add_deleted_at_column_to_posts_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -222,6 +221,7 @@
       <workItem from="1609916569929" duration="11623000" />
       <workItem from="1609936743161" duration="3313000" />
       <workItem from="1610012156139" duration="7383000" />
+      <workItem from="1610079608921" duration="2979000" />
     </task>
     <servers />
   </component>
