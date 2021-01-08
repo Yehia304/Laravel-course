@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Models\Post;
 use App\Models\User;
+use App\Models\Country;
 use App\Models\Role;
 /*
 |--------------------------------------------------------------------------
@@ -233,5 +234,22 @@ foreach ($user->roles as $role){
     return $role->pivot->created_at;
 
 }
+
+});
+
+Route::get('/user/country',function (){
+
+    $countries = Country::find(1);
+
+
+
+    foreach ($countries->posts as $post){
+
+        echo $post->title;
+
+    }
+
+
+
 
 });
