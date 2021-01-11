@@ -52,7 +52,10 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        return 'Yaaay id is : '. $id;
+
+        $post = Post::find($id);
+        return view('Posts.show',compact('post'));
+
     }
 
     /**
@@ -63,7 +66,8 @@ class PostsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $post = Post::find($id);
+        return view('Posts.edit',compact('post'));
     }
 
     /**
@@ -75,7 +79,14 @@ class PostsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+//        return $id;
+        $post = Post::find($id);
+
+        $post->title = "Updatedfromform";
+
+        $post->content = "Contentfromform";
+
+        $post->save();
     }
 
     /**
@@ -86,7 +97,10 @@ class PostsController extends Controller
      */
     public function destroy($id)
     {
-        //
+//        return $id;
+      $post = Post::find($id);
+
+        $post->delete();
     }
 
     public function contact(){
