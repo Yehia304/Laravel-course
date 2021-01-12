@@ -1,17 +1,19 @@
+<h1>EDIT POST MAN</h1>
 
-<form method="post" action="/posts/{{$post->id}}">
+
+{!! Form::model($post, ['method'=>'PATCH', 'action'=>['App\Http\Controllers\PostsController@update',$post->id]]) !!}
 
     {{csrf_field()}}
 
-    <input type="hidden" name="_method" value="PUT">
 
-    <input type="text" name="Title" value="{{$post->title}}">
+{!! Form::label('title','title') !!}
+{!! Form::text('title',null,['class'=>'form-control']) !!}
 
     <input type="submit" name="Go">
 
 
 
-</form>
+
 
 <form method="post" action="/posts/{{$post->id}}">
 

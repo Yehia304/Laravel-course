@@ -6,9 +6,18 @@
 
 {!! Form::open(['method'=>'POST', 'action'=>'App\Http\Controllers\PostsController@store']) !!}
 
-        <input type="text" name="title" placeholder="Enter the title">
-{{--        {{@csrf_field()}}--}}
-        <input type="text" name="content" placeholder="Enter the content">
+<div class="form-group">
+
+    {!! Form::label('title','Title') !!}
+    {!! Form::text('title',null,['class' => 'form-control']) !!}
+
+    {!! Form::label('content','Content') !!}
+    {!! Form::text('content',null,['class' => 'form-control']) !!}
+
+</div>
+
+
+
         <input type="submit" name="submit">
 
 

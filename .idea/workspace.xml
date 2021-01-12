@@ -20,13 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8563df9-994f-40d3-bccb-4f470f105dad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Yehia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Yehia.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Posts/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Posts/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Posts/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Posts/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +227,7 @@
       <workItem from="1610132726012" duration="618000" />
       <workItem from="1610198235058" duration="7434000" />
       <workItem from="1610359714369" duration="10965000" />
-      <workItem from="1610454367033" duration="1288000" />
+      <workItem from="1610454367033" duration="3500000" />
     </task>
     <servers />
   </component>
