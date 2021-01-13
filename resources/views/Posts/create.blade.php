@@ -17,8 +17,8 @@
 </div>
 
 
-
 {!! Form::submit('Create Post',['class'=>'btn btn-info']) !!}
+
 {!! Form::close() !!}
 
 @if(count($errors) > 0)
