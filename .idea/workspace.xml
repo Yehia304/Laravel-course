@@ -22,7 +22,6 @@
     <list default="true" id="e8563df9-994f-40d3-bccb-4f470f105dad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Posts/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Posts/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Posts/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Posts/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -228,6 +227,7 @@
       <workItem from="1610198235058" duration="7434000" />
       <workItem from="1610359714369" duration="10965000" />
       <workItem from="1610454367033" duration="3500000" />
+      <workItem from="1610533275082" duration="1017000" />
     </task>
     <servers />
   </component>

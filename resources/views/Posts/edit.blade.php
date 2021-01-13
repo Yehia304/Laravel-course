@@ -9,7 +9,9 @@
 {!! Form::label('title','title') !!}
 {!! Form::text('title',null,['class'=>'form-control']) !!}
 
-    <input type="submit" name="Go">
+{!! Form::submit('Update Post',['class'=>'btn btn-info']) !!}
+
+{!! Form::close() !!}
 
 
 

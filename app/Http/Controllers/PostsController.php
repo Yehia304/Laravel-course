@@ -38,6 +38,14 @@ class PostsController extends Controller
     public function store(Request $request)
     {
         //return $request->title;
+        $this->validate($request,[
+
+            'title'=>'required',
+            'content'=>'required'
+
+
+
+        ]);
 
         Post::create($request->all());
 
