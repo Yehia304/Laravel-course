@@ -255,4 +255,10 @@ use App\Models\Role;
 //|--------------------------------------------------------------------------
 //| CRUD Application
 //|--------------------------------------------------------------------------
-Route::resource('/posts','App\Http\Controllers\PostsController');
+
+Route::group(['middleware'=>'web'],function(){
+
+    Route::resource('/posts','App\Http\Controllers\PostsController');
+
+});
+

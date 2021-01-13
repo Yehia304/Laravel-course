@@ -18,9 +18,33 @@
 
 
 
-        <input type="submit" name="submit">
+{!! Form::submit('Create Post',['class'=>'btn btn-info']) !!}
+{!! Form::close() !!}
+
+@if(count($errors) > 0)
 
 
-    </form>
+
+        <div class="alert alert-danger">
+            <ul>
+
+                @foreach($errors->all() as $error)
+
+                    <li>{{$error}}</li>
+                @endforeach
+
+
+
+            </ul>
+
+
+        </div>
+
+
+
+
+@endif
+
+
 
 
