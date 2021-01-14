@@ -4,9 +4,11 @@
 
 {{--    <form method="post" action="/posts">--}}
 
-{!! Form::open(['method'=>'POST', 'action'=>'App\Http\Controllers\PostsController@store']) !!}
+{!! Form::open(['method'=>'POST', 'action'=>'App\Http\Controllers\PostsController@store','files'=>true]) !!}
 
 <div class="form-group">
+
+    {!! Form::file('file',['class' => 'form-control']) !!}
 
     {!! Form::label('title','Title') !!}
     {!! Form::text('title',null,['class' => 'form-control']) !!}

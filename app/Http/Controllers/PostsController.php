@@ -38,6 +38,13 @@ class PostsController extends Controller
      */
     public function store(CreatePostRequest $request)
     {
+
+        $file = $request->file('file');
+
+        echo $file->getClientOriginalName();
+
+
+
         //return $request->title;
 //        $this->validate($request,[
 //
@@ -47,10 +54,10 @@ class PostsController extends Controller
 //
 //
 //        ]);
-
-        Post::create($request->all());
-
-        return redirect('/posts');
+//
+//        Post::create($request->all());
+//
+//        return redirect('/posts');
     }
 
     /**
