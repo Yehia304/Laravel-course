@@ -66,4 +66,9 @@ class User extends Authenticatable
         $this->attributes['name'] = strtoupper($value);
 
     }
+
+//    public static function scopeLatest($query){
+//
+//        return $query->orderBy('id','asc')->get();
+//   }
 }
