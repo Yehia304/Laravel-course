@@ -27,6 +27,7 @@ class PostsController extends Controller
      */
     public function create()
     {
+
         return view('Posts.create');
     }
 
@@ -76,6 +77,7 @@ class PostsController extends Controller
     {
 
         $post = Post::find($id);
+
         return view('Posts.show',compact('post'));
 
     }
@@ -108,6 +110,8 @@ class PostsController extends Controller
         $post->title = "Updatedfromform";
 
         $post->content = "Contentfromform";
+
+        $post->path = "PathPath";
 
         $post->save();
     }
