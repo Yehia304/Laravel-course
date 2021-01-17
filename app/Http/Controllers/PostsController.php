@@ -50,8 +50,6 @@ class PostsController extends Controller
 
         Post::create($input);
 
-
-
         //return $request->title;
 //        $this->validate($request,[
 //
@@ -75,11 +73,9 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-
         $post = Post::find($id);
 
         return view('Posts.show',compact('post'));
-
     }
 
     /**
@@ -104,10 +100,11 @@ class PostsController extends Controller
      */
     public function update(Request $request, $id)
     {
-//        return $id;
+
         $post = Post::find($id);
 
         $post->title = "Updatedfromform";
+        $post->user_id=1;
 
         $post->content = "Contentfromform";
 
