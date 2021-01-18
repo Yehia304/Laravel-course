@@ -105,7 +105,7 @@ class PostsController extends Controller
 
         $post->title = "Updatedfromform";
         $post->user_id=1;
-
+        $post->is_admin=1;
         $post->content = "Contentfromform";
 
         $post->path = "PathPath";
