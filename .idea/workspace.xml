@@ -21,8 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e8563df9-994f-40d3-bccb-4f470f105dad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Posts/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Posts/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +162,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Laravel-Middleware/Laravel-middleware" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -235,6 +234,11 @@
       <workItem from="1610892089821" duration="1351000" />
       <workItem from="1610972756767" duration="136000" />
       <workItem from="1610972916856" duration="108000" />
+      <workItem from="1610981049628" duration="236000" />
+      <workItem from="1611055616048" duration="10000" />
+      <workItem from="1611072632092" duration="61000" />
+      <workItem from="1611225866443" duration="170000" />
+      <workItem from="1611394643113" duration="52000" />
     </task>
     <servers />
   </component>

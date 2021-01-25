@@ -57,7 +57,7 @@ use Carbon\Carbon;
 //
 //Route::get('/read/{id}',function($id){
 //
-//   $results =  DB::select('select * from posts where id = ?',[$id]);
+// $results =  DB::select('select * from posts where id = ?',[$id]);
 //
 //   return $results;
 //
@@ -300,5 +300,11 @@ Route::get('/setname',function (){
 
 });
 
+Route::get('/php',function (){
+
+    return phpinfo();
+
+
+});
 
 
